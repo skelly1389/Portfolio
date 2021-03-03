@@ -1,0 +1,40 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 200%;
+    background: rgb(185, 214, 185);
+    width: fit-content;
+    padding:1%;
+}
+
+h2 {
+    border-right: 5px solid rgb(144, 175, 144);
+    width:85px;
+    font-size: 150%;
+}
+
+h3 {
+text-align: right;
+}
+
+header {
+    background-color: rgb(144, 175, 144);
+}
+
+nav {
+    display: flex;
+    justify-content:flex-end;
+}
+
+nav a {
+    padding: 10px;
+}
+
+#backgroundhead {
+    height:200px;
+    background-image: url("https://cdn.discordapp.com/attachments/811766713438699561/813629107023773726/Kapture_2021-02-22_at_23.28.20.gif");
+    background-size: cover;
+}
+
