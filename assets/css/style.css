@@ -1,5 +1,6 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -13,19 +14,31 @@ h2 {
     border-right: 5px solid rgb(144, 175, 144);
     width:85px;
     font-size: 150%;
+    margin-left: 50px;
+    height:max-content;
 }
 
 h3 {
 text-align: right;
 }
 
+body{
+    background-color: rgb(233, 250, 233);
+}
+
 header {
+    display: flex;
     background-color: rgb(144, 175, 144);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 nav {
     display: flex;
     justify-content:flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -38,3 +51,35 @@ nav a {
     background-size: cover;
 }
 
+aside {
+    display: flex;
+    flex-flow: 1 0 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p{
+    padding: 10px 20px;
+    text-indent: 2em;
+}
+
+main {
+    display: flex;
+    flex-flow: 1 0 200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.mostrecent {
+    flex: 1;
+    justify-self:stretch;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
