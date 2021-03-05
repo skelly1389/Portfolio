@@ -164,3 +164,7 @@ footer {
         flex-flow: column wrap;
     }
 }
+
+a:hover {
+    border: 3px dotted goldenrod;
+}
