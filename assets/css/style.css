@@ -35,6 +35,7 @@ h3 {
 body{
     background-color: rgb(233, 250, 233);
     padding: 0% 10%;
+    width:100vw;
 }
 
 /* creates flexable header, changes background color, formats how children are placed */
