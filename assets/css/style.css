@@ -15,6 +15,7 @@ h2 {
     width:85px;
     font-size: 150%;
     float:left;
+    line-height: 100%;
 }
 
 h3 {
@@ -78,17 +79,30 @@ p{
     text-indent: 2em;
 }
 
+.sxs{
+    display: flex;
+    align-self:stretch;
+}
+
 main {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 20px;
+    justify-self: stretch;
 }
 
-.mostrecent {
-    flex: 1;
-    justify-self:stretch;
+#mostrecent {
+    align-self: stretch;
+    height: auto;
+    min-width: 100%;
+}
+
+main img {
+    margin: 1% 1%;
+    max-width: 50%;
+    height: auto;
 }
 
 footer {
@@ -103,3 +117,10 @@ footer {
 #bottomgif {
     border-radius: 10%;
 }
+
+@media screen and (max-width: 768px) {
+    .sxs {
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
