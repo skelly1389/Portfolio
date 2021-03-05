@@ -92,6 +92,7 @@ p{
 .sxs{
     display: flex;
     flex-wrap: nowrap;
+    justify-content: flex-start;
     align-self:stretch;
 }
 
@@ -106,7 +107,7 @@ figure {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-70%, -400%);
+    transform: translate(-390%, -660%);
     font-size:x-large;
     background-color: rgb(185, 214, 185);
     border: 2px dotted greenyellow;
@@ -117,7 +118,7 @@ figure {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-200px, -100px);
+    transform: translate(-260px, -540%);
     font-size: medium;
     background-color: rgb(185, 214, 185);
     border: 2px dotted greenyellow;
@@ -125,17 +126,22 @@ figure {
 
 main {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 #mostrecent {
     width: 100%;
+    height: auto;
+    object-fit: stretch;
+    justify-self: center;
 }
 
 main a {
     width:50%;
-    object-fit: contain;
+    height: auto;
+    object-fit: stretch;
+    flex-basis: auto;
 }
 
 footer {
