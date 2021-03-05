@@ -14,21 +14,22 @@ h2 {
     border-right: 5px solid rgb(144, 175, 144);
     width:85px;
     font-size: 150%;
-    margin-left: 50px;
-    height:max-content;
-    float:left
-    flex: 0 0 20%;
+    float:left;
 }
 
 h3 {
-    font-size: 200%;
+    font-size: 150%;
     background: rgb(185, 214, 185);
     width: fit-content;
-    padding-left: 20px;
+    height: min-content;
+    align-self: flex-end;
+    padding: 0px 10px;
+    margin: 5px 5px;
 }
 
 body{
     background-color: rgb(233, 250, 233);
+    padding: 0% 10%;
 }
 
 header {
@@ -52,14 +53,22 @@ nav a {
 }
 
 #backgroundhead {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
     height:200px;
     background-image: url("https://cdn.discordapp.com/attachments/811766713438699561/813629107023773726/Kapture_2021-02-22_at_23.28.20.gif");
     background-size: cover;
 }
 
+.profilepic {
+    border-radius:100%;
+    margin-left: 2%;
+
+}
+
 aside {
     display: flex;
-    flex-flow: 1 0 200px;
     justify-content: space-between;
     align-items:center;
 }
@@ -71,7 +80,6 @@ p{
 
 main {
     display: flex;
-    flex-flow: 1 0 200px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +95,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     padding-right: 20px;
-    background-color: rgb(144, 175, 144)
+    background-color: rgb(144, 175, 144);
+}
+
+#bottomgif {
+    border-radius: 10%;
 }
