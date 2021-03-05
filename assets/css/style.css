@@ -1,8 +1,10 @@
+/* sets fonts and box format */
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
 
+/* h1 headings larger, sets color and width and adds small buffer */
 h1 {
     font-size: 200%;
     background: rgb(185, 214, 185);
@@ -10,14 +12,15 @@ h1 {
     padding:1%;
 }
 
+/* h2 headings larger, adds left border, aligns to left of page */
 h2 {
     border-right: 5px solid rgb(144, 175, 144);
     width:85px;
     font-size: 150%;
     float:left;
-    line-height: 100%;
 }
 
+/* h3 headings larger, background color, formats location */
 h3 {
     font-size: 150%;
     background: rgb(185, 214, 185);
@@ -28,11 +31,13 @@ h3 {
     margin: 5px 5px;
 }
 
+/* backgorund of visable content, adds a bit of space on either side */
 body{
     background-color: rgb(233, 250, 233);
     padding: 0% 10%;
 }
 
+/* creates flexable header, changes background color, formats how children are placed */
 header {
     display: flex;
     background-color: rgb(144, 175, 144);
@@ -41,6 +46,7 @@ header {
     align-items: flex-end;
 }
 
+/* sets spacing for links */
 nav {
     display: flex;
     justify-content:flex-end;
@@ -53,6 +59,7 @@ nav a {
     padding: 10px;
 }
 
+/* adds background for top profile image */
 #backgroundhead {
     display: flex;
     justify-content: space-between;
@@ -62,12 +69,14 @@ nav a {
     background-size: cover;
 }
 
+/* spaces out profile pic and rounds edges */
 .profilepic {
     border-radius:100%;
     margin-left: 2%;
 
 }
 
+/* vertically spaces about me section */
 aside {
     display: flex;
     justify-content: space-between;
@@ -79,30 +88,54 @@ p{
     text-indent: 2em;
 }
 
+/* creates container for heading and content of section */
 .sxs{
     display: flex;
+    flex-wrap: nowrap;
     align-self:stretch;
 }
 
+figure {
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+
+  /* text for most recent project */
+  .captionmain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -400%);
+    font-size:x-large;
+    background-color: rgb(185, 214, 185);
+    border: 2px dotted greenyellow;
+  }
+
+  /* text for all other projects */
+  .caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200px, -100px);
+    font-size: medium;
+    background-color: rgb(185, 214, 185);
+    border: 2px dotted greenyellow;
+  }
+
 main {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    justify-self: stretch;
 }
 
 #mostrecent {
-    align-self: stretch;
-    height: auto;
-    min-width: 100%;
+    width: 100%;
 }
 
-main img {
-    margin: 1% 1%;
-    max-width: 50%;
-    height: auto;
+main a {
+    width:50%;
+    object-fit: contain;
 }
 
 footer {
@@ -118,9 +151,10 @@ footer {
     border-radius: 10%;
 }
 
+/* makes headers appear above other content when screen shrinks */
 @media screen and (max-width: 768px) {
     .sxs {
         display: flex;
-        flex-direction:column;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
     }
+}
